@@ -57,4 +57,411 @@ body
 	background-color: $accent
 	color: #fff
 
+//============================================
+body
+	overflow-x: hidden
+	position: relative
+img
+	display: inline-block
+	max-width: 100%
+	height: auto
+	transition: .3s
+
+h1, h2, h3, h4, p, span
+	margin: 0 auto
+	padding: 0 auto
+	text-decoration: none
+	font-weight: normal
+
+ul
+	margin: 0
+	padding: 0
+
+.main-holder
+	overflow: hidden
+	max-width: 1260px
+	margin: 0 auto
+	padding: 0 20px
+	position: relative
+.wrap-button
+	//margin-top: 50px
+	//text-align: center
+	a
+		//display: inline-block
+		//padding: 0 10px
+		font-family: "OpenSansHebrew-Regular_0"
+		background: #f79428
+		border-radius: 25px
+		font-size: 17px
+		text-decoration: none
+		color: rgb(54, 20, 0)
+		transition: .3s
+		min-width: 180px
+		min-height: 40px
+		display: flex
+		justify-content: center
+		align-items: center
+		&:hover
+			transform: scale(.9)
+
+//============================================
+.main-content
+	width: 100%
+	height: 865px
+	background-size: cover
+	background-position: center
+	//background-repeat: no-repeat
+	//position: relative
+	.nav-bar
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-top: 25px
+		.wrap-img
+			display: flex
+			justify-content: center
+			align-items: center
+			max-width: 121px
+			z-index: 3
+		.items
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			margin: 0 -14px
+			padding: 10px 0 10px 10px
+			border-radius: 25px 0 0 25px
+			flex-wrap: wrap
+			background: #361200
+			min-height: 45px
+			.item
+				list-style: none
+				padding: 0 14px
+				margin-bottom: 5px
+				border-right: 2px solid #febe10
+				font-family: "OpenSansHebrew-Regular_0"
+				font-size: 15px
+				line-height: 1.2
+				color: white
+				cursor: pointer
+				transition: .3s
+				&:first-child
+					padding: 0 28px 0 14px
+					border-right: none
+				&:hover
+					color: #febe10
+			.active
+				color: #febe10
+
+		.slick-slider
+			.slick-slide
+				min-height: 20px
+
+
+	.slider-sections
+		margin-top: 90px
+		//margin-bottom:
+		.slides
+			direction: ltr
+			display: flex
+			justify-content: center
+			margin: 0 -100px
+			//height: 420px
+			overflow: hidden
+			.slide
+				direction: rtl
+				list-style: none
+				padding: 0 100px
+				outline: none
+				margin-bottom: 10px
+				margin-top: 10px
+				display: flex
+				justify-content: center
+				//height: inherit
+				.wrap-content
+					display: flex
+					justify-content: center
+					border-radius: 15px
+					background-color: rgb(255, 255, 255)
+					box-shadow: 0 0 20px 0 rgba(75, 120, 181, 0.2)
+					max-width: 925px
+					padding: 20px 30px
+				.wrap-text
+					//direction: rtl
+					text-align: right
+					padding-left: 5px
+					overflow-y: auto
+					height: 410px
+					font-family: "OpenSansHebrew-Regular_0"
+					color: black
+					line-height: 1.2
+					width: 55%
+					h4
+						font-size: 24px
+						margin-bottom: 10px
+					h3
+						font-family: "OpenSansHebrew-Bold_0"
+						color: #ff0808
+						font-size: 31px
+						margin-bottom: 40px
+					p
+						font-size: 19px
+						margin: 0 0 20px
+					.footer-text
+						margin-top: 40px
+						p
+							font-size: 15px
+							margin: 0
+				.wrap-img
+					width: 45%
+					padding: 0 40px 0 0
+					display: flex
+					justify-content: center
+					align-items: center
+
+	::-webkit-scrollbar-button
+		//background-image: url('')
+		//background-repeat: no-repeat
+		background: #337ab7
+		width: 6px
+		height: 0
+
+
+	::-webkit-scrollbar-track
+		background-color: rgb(54, 20, 0)
+		box-shadow: 0px 0px 3px rgb(54, 20, 0) inset
+
+
+	::-webkit-scrollbar-thumb
+		-webkit-border-radius: 5px
+		border-radius: 5px
+		background-color: #ffcb17
+		box-shadow: 0px 1px 1px #fff inset
+		background-image: url('https://yraaa.ru/_pu/24/59610063.png')
+		background-position: center
+		background-repeat: no-repeat
+
+
+	::-webkit-resizer
+		//background-image: url('')
+		//background-repeat: no-repeat
+		background: #337ab7
+		width: 7px
+		height: 0
+
+
+	::-webkit-scrollbar
+		width: 11px
+
+
+.slick-slider
+	//direction: rtl
+	position: relative
+	display: block
+	box-sizing: border-box
+	-webkit-touch-callout: none
+	-webkit-user-select: none
+	-khtml-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	-ms-touch-action: pan-y
+	touch-action: pan-y
+	-webkit-tap-highlight-color: transparent
+
+	.slick-list
+		position: relative
+		overflow: hidden
+		display: block
+		margin: 0
+		padding: 0
+		width: 100%
+		transform: translate3d(0, 0, 0)
+		&:focus
+			outline: none
+		&.dragging
+			cursor: pointer
+			cursor: hand
+
+	.slick-track
+		position: relative
+		left: 0
+		top: 0
+		display: block
+		transform: translate3d(0, 0, 0)
+
+		&:before,
+		&:after
+			content: ""
+			display: table
+
+		&:after
+			clear: both
+
+	.slick-slide
+		float: left
+		height: 100%
+		min-height: 420px
+
+	.slick-arrow
+		position: absolute
+		border: none
+		outline: none
+		top: 50%
+		width: 33px
+		height: 55px
+		//border-left: 5px solid #febe10
+		//border-top: 5px solid #febe10
+		background-image: url(../img/arrow.png)
+		background-size: cover
+		z-index: 2
+
+	.slick-next
+		left: 90%
+		transform: translateY(-50%) rotate(-180deg)
+	.slick-prev
+		right: 90%
+		//transform: translateY(-50%) rotate(-45deg)
+
+	.slick-arrow.slick-hidden
+		display: none
+
+	.slick-next:before, .slick-prev:before
+		content: none
+	.slick-dots
+		li
+			margin: 0
+			button
+				&:before
+					font-size: 12px
+	.slick-dots
+		bottom: -35px
+
+footer
+	direction: rtl
+	width: 100%
+	min-height: 100px
+	border-top: 4px solid #f79428
+	background: #361400
+	.main-holder
+		min-height: inherit
+	.wrap-section
+		display: flex
+		justify-content: space-between
+		color: white
+		min-height: inherit
+		a
+			font-family: "OpenSansHebrew-Regular_0"
+			font-size: 20px
+			line-height: 1
+			color: white
+		.right-side
+			display: flex
+			align-items: center
+		.wrap-button
+			margin-right: 20px
+			a
+				color: rgb(54, 20, 0)
+				font-size: 17px
+		.left-side
+			display: flex
+			align-items: center
+
+.hiden
+	opacity: 0
+	z-index: -999
+	visibility: hidden
+.main-content-popapp
+	width: 100%
+	height: 865px
+	background-size: cover
+	background-position: center
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 3
+	transition: 0.5s
+	.wrap-header-text
+		text-align: center
+		h1
+			font-family: "OpenSansHebrew-Bold_0"
+			font-size: 48px
+			line-height: 1.2
+			color: #e23e3e
+			margin-top: 50px
+		h3
+			font-family: "OpenSansHebrew-Regular_0"
+			font-size: 30px
+			line-height: 1.2
+			color: #e23e3e
+			margin-bottom: 30px
+		p
+			font-family: "OpenSansHebrew-Regular_0"
+			font-size: 20px
+			line-height: 1.2
+			color: #464646
+		.wrap-button
+			margin: 35px auto 0
+			max-width: 310px
+			a
+				color: white
+				background: #361400
+	.wrap-items
+		display: flex
+		justify-content: center
+	.items
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		margin: 45px -17px 0
+		max-width: 960px
+		.item
+			list-style: none
+			padding: 0 17px
+			margin-bottom: 20px
+			width: 25%
+			a
+				display: flex
+				flex-direction: column
+				border-radius: 15px
+				background-color: rgb(255, 255, 255)
+				box-shadow: 0 0 20px 2px rgba(75, 120, 181, 0.2)
+				padding: 10px 0
+				text-decoration: none
+				transition: .3s
+				&:hover
+					transform: scale(.9)
+			.wrap-img
+				display: flex
+				justify-content: center
+				align-items: center
+				img
+					border-radius: 15px
+					max-width: 177px
+					max-height: 151px
+			.wrap-text
+				text-align: center
+				span
+					font-family: "OpenSansHebrew-Regular_0"
+					font-size: 12px
+					line-height: 1.2
+					color: black
+					display: block
+				.red-style
+					font-family: "OpenSansHebrew-Bold_0"
+					font-size: 15px
+					line-height: 1.2
+					color: #ff0808
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import "media" // Всегда в конце
