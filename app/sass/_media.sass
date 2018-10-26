@@ -4,6 +4,8 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1540px)
+    .label-gofman
+      top: 315px
     .main-content, .main-content-popapp
       height: 619px
     .main-content
@@ -76,13 +78,15 @@
         max-width: 685px
         .item
           padding: 0 10px
+          a
+            min-height: 150px
           .wrap-img
             img
               max-width: 100px
               max-height: 85px
           .wrap-text
             .red-style
-              font-size: 13px
+              font-size: 11px
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
@@ -232,6 +236,7 @@
               .wrap-text
                 order: 2
                 width: 100%
+                padding-right: 10px
               .wrap-img
                 order: 1
                 width: 100%
@@ -239,6 +244,10 @@
                 padding: 0
 
     footer
+      position: fixed
+      bottom: 0
+      left: 0
+      z-index: 9
       .wrap-section
         flex-direction: column
         justify-content: space-around
@@ -259,15 +268,16 @@
 
     .main-content-popapp, .main-content
       height: auto
-      min-height: 920px
+      //min-height: 920px
+      min-height: 1250px
     .main-content-popapp
       .wrap-header-text
         h1
           margin-top: 180px
       .items
         .item
-          width: 33.333%
-
+          //width: 33.333%
+          width: 50%
     .slick-slider
       .slick-slide
         height: auto
@@ -285,11 +295,11 @@
           .slide
             padding: 0 20px
 
-    footer
-      position: fixed
-      bottom: 0
-      left: 0
-      z-index: 9
+    //footer
+    //  position: fixed
+    //  bottom: 0
+    //  left: 0
+    //  z-index: 9
 
     .slick-slider
       .slick-next
